@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Answer this survey form!</p>
+    <form id="survey-form" onsubmit="return validateForm()">
+        <fieldset>
+            <label id="name-label">Name: </label>
+            <input id="name" name="name" placeholder="Enter your name" required>
+
+            <label id="email-label">Email: </label>
+            <input id="email" name="email" type="email" placeholder="Enter your email" required>
+
+            <label id="number-label">Number: </label>
+            <input id="number" name="number" type="number" min="1" max="100" placeholder="Enter your number" required>
+
+            <label for="dropdown">Select your favorite Boy Group: </label>
+            <select id="dropdown" name="Boy-Group">
+                <option value="" disabled selected>Select one</option>
+                <option value="enhypen">Enhypen</option>
+                <option value="seventeen">Seventeen</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Emotion</legend>
+            <label><input type="radio" name="emotion" value="happy" required> Happy</label>
+            <label><input type="radio" name="emotion" value="sad"> Sad</label>
+            <label><input type="radio" name="emotion" value="angry"> Angry</label>
+            <label><input type="radio" name="emotion" value="excited"> Excited</label>
+            <label><input type="radio" name="emotion" value="nervous"> Nervous</label>
+            <label><input type="radio" name="emotion" value="neutral"> Neutral</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Interest</legend>
+            <label><input type="checkbox" name="interest" value="music"> Music</label>
+            <label><input type="checkbox" name="interest" value="books"> Books</label>
+            <label><input type="checkbox" name="interest" value="sports"> Sports</label>
+            <label><input type="checkbox" name="interest" value="art"> Art</label>
+            <label><input type="checkbox" name="interest" value="traveling"> Traveling</label>
+            <label><input type="checkbox" name="interest" value="gaming"> Gaming</label>
+            <label><input type="checkbox" name="interest" value="cooking"> Cooking</label>
+            <label><input type="checkbox" name="interest" value="technology"> Technology</label>
+            <!-- <label>
+                <input type="checkbox" name="interest" value="others"> Others
+                <input type="text" name="other-interest" placeholder="Please specify" style="margin-left: 10px;">
+            </label> -->
+        </fieldset>
+
+        <fieldset>
+            <legend>Which genre of music do you like?</legend>
+            <select name="music-genre" required>
+                <option value="" disabled selected>Select a Genre</option>
+                <option value="pop">Pop</option>
+                <option value="rock">Rock</option>
+                <option value="jazz">Jazz</option>
+                <option value="classical">Classical</option>
+                <option value="other">Other</option>
+            </select>
+            <input type="text" name="other-genre" placeholder="If 'Other', specify here">
+        </fieldset>
+
+        <fieldset>
+            <legend>Rate your love for music (1 being least, 10 being most):</legend>
+            <input type="range" name="music-love" min="1" max="10" step="1">
+        </fieldset>
+
+        <label for="comments">How do you feel right now? </label>
+        <textarea id="comments" name="comments" placeholder="Enter what you feel right now"></textarea>
+
+
+        <fieldset>
+            <legend>How satisfied are you with this survey?</legend>
+            <select name="rate" required>
+                <option value="strongly-disagree"> Strongly Disagree</option>
+                <option value="disagree"> Disagree</option>
+                <option value="neutral"> Neutral</option>
+                <option value="strongly-agree">  Agree</option>
+                <option value="strongly-agree"> Strongly Agree</option>
+            </select>
+            <label for="improvement-comment">How can we improve?</label>
+            <textarea id="improvement-comment" name="improvement-comment" placeholder="Share your suggestions here..." required></textarea>
+        </fieldset>
+
+            <button id="submit" type="submit">Submit</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>alue="agree"> Agr
+</html>
