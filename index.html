@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Mental Health Survey Form</title>
+<link href="styles.css" rel="stylesheet">
+
+</head>
+<body>
+  <div class="container" role="main">
+    <h1>Mental Health Survey</h1>
+    <form id="surveyForm" aria-label="Mental Health Survey Form">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Your full name" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="example@domain.com" required />
+
+      <label for="age">Age Group</label>
+      <select id="age" name="age" required>
+        <option value="" disabled selected>Select your age range</option>
+        <option value="under18">Under 18</option>
+        <option value="18-24">18 - 24</option>
+        <option value="25-34">25 - 34</option>
+        <option value="35-44">35 - 44</option>
+        <option value="45-54">45 - 54</option>
+        <option value="55-64">55 - 64</option>
+        <option value="65plus">65 and above</option>
+      </select>
+
+      <label>How would you describe your current mental health?</label>
+      <div class="radio-group" role="radiogroup" aria-labelledby="mentalHealthLabel">
+        <label><input type="radio" name="mental_health" value="excellent" required /> Excellent</label>
+        <label><input type="radio" name="mental_health" value="good" /> Good</label>
+        <label><input type="radio" name="mental_health" value="fair" /> Fair</label>
+        <label><input type="radio" name="mental_health" value="poor" /> Poor</label>
+      </div>
+
+      <label for="stress_level">How often do you feel stressed?</label>
+      <select id="stress_level" name="stress_level" required>
+        <option value="" disabled selected>Select stress frequency</option>
+        <option value="never">Never</option>
+        <option value="rarely">Rarely</option>
+        <option value="sometimes">Sometimes</option>
+        <option value="often">Often</option>
+        <option value="always">Always</option>
+      </select>
+
+      <label for="support">Do you feel you have adequate support for your mental well-being?</label>
+      <select id="support" name="support" required>
+        <option value="" disabled selected>Select an option</option>
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+        <option value="not_sure">Not sure</option>
+      </select>
+
+      <label for="coping_mechanisms">Which coping mechanisms do you use? (check all that apply)</label>
+      <div class="checkbox-group" role="group" aria-labelledby="copingMechanismsLabel">
+        <label><input type="checkbox" name="coping_mechanisms" value="exercise" /> Exercise</label>
+        <label><input type="checkbox" name="coping_mechanisms" value="meditation" /> Meditation</label>
+        <label><input type="checkbox" name="coping_mechanisms" value="talking_to_friends" /> Talking to Friends/Family</label>
+        <label><input type="checkbox" name="coping_mechanisms" value="hobbies" /> Hobbies</label>
+        <label><input type="checkbox" name="coping_mechanisms" value="therapy" /> Therapy/Counseling</label>
+        <label><input type="checkbox" name="coping_mechanisms" value="other" /> Other</label>
+      </div>
+
+      <label for="comments">Additional comments or concerns</label>
+      <textarea id="comments" name="comments" placeholder="Write your thoughts here..."></textarea>
+
+      <button type="submit">Submit Survey</button>
+    </form>
+    <p class="footer-note">Thank you for sharing your feelings. Your privacy is respected.</p>
+  </div>
+
+  <script src="node.js"></script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+  body {
+    background: #e6f4ea;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #2f4f2f;
+  }
+  .container {
+    max-width: 600px;
+    background: white;
+    margin: 40px auto;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(34, 60, 80, 0.2);
+  }
+  h1 {
+    color: #2a7a2a;
+    text-align: center;
+    margin-bottom: 25px;
+    font-weight: 700;
+  }
+  label {
+    display: block;
+    margin: 16px 0 8px;
+    font-weight: 600;
+  }
+  input[type="text"],
+  input[type="email"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 10px 14px;
+    border: 2px solid #2a7a2a;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+  }
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  select:focus,
+  textarea:focus {
+    border-color: #4caf50;
+    outline: none;
+  }
+  textarea {
+    resize: vertical;
+    min-height: 80px;
+  }
+  .radio-group {
+    margin: 8px 0;
+  }
+  .radio-group label,
+  .checkbox-group label {
+    font-weight: normal;
+    display: inline-block;
+    margin-right: 20px;
+    cursor: pointer;
+  }
+  .checkbox-group {
+    margin: 8px 0 16px;
+  }
+  button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 14px 28px;
+    font-size: 1.1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 24px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+    font-weight: 700;
+  }
+  button:hover {
+    background-color: #3a923a;
+  }
+  .footer-note {
+    font-size: 0.9rem;
+    color: #3a6b3a;
+    margin-top: 20px;
+    text-align: center;
+  }
